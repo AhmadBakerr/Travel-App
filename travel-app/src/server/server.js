@@ -1,16 +1,13 @@
 const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
 const app = express();
 
-app.use(cors());
-app.use(bodyParser.json());
+app.use(express.static('dist'));
 
 app.get('/', (req, res) => {
-    res.send("🚀 Server is running!");
+    res.sendFile('dist/index.html');
 });
 
-const PORT = 8000;
+const PORT = 8081;
 app.listen(PORT, () => {
-    console.log(`✅ Server running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });

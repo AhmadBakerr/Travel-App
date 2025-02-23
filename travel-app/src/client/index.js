@@ -1,6 +1,4 @@
-import "./styles/style.scss";
-import { handleSubmit } from "./js/app";
+import './styles/style.scss';
+import { handleSubmit } from './js/app';
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("🚀 App is running!");
-});
+document.getElementById('submit').addEventListener('click', handleSubmit);

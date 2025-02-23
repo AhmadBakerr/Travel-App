@@ -8,7 +8,13 @@ Travel App is a web application that allows users to enter their travel destinat
 
 ---
 
+## 🛠 Node.js Version  
+This project requires **Node.js v18** or later. To check your version, run:  
+```sh
+node -v
+
 ## 🚀 How to Run the Project  
+
 
 ### 1️⃣ Install Dependencies  
 Ensure **Node.js** is installed, then run:  
@@ -22,7 +28,7 @@ npm run build-dev
 To run the server:
 sh
 npm start
-Then open:
+Then 
 
 arduino
 http://localhost:8081

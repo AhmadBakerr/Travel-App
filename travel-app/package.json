@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
-  "start": "node src/server/server.js",
-  "dev": "webpack serve --open",
-  "build": "webpack --mode production"
-}
-,
+    "start": "node src/server/server.js",
+    "dev": "webpack serve --open",
+    "build": "webpack --mode production"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -25,8 +24,11 @@
   },
   "dependencies": {
     "body-parser": "^1.20.3",
+    "clean-webpack-plugin": "^4.0.0",
     "cors": "^2.8.5",
+    "css-loader": "^7.1.2",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "style-loader": "^4.0.0"
   }
 }
