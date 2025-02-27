@@ -1,44 +1,45 @@
-# 🌍 Travel App
+🌍 Travel App
+A web application that helps users plan their trips by fetching location details, weather forecasts, and images using APIs.
 
-## 📌 Project Description  
-Travel App is a web application that allows users to enter their travel destination and dates, retrieving weather information and images using multiple APIs:  
-- **Geonames API** for location data.  
-- **Weatherbit API** for weather forecasts.  
-- **Pixabay API** for destination images.  
+📌 Features
+Search for a destination.
+Get geographical coordinates using the Geonames API.
+Retrieve weather forecasts using the Weatherbit API.
+Display images of the destination using the Pixabay API.
+🛠️ Installation
+Clone the repository
 
----
-
-## 🛠 Node.js Version  
-This project requires **Node.js v18** or later. To check your version, run:  
-```sh
-node -v
-
-## 🚀 How to Run the Project  
+git clone https://github.com/your-repo/travel-app.git
+cd travel-app
+Install dependencies
 
 
-### 1️⃣ Install Dependencies  
-Ensure **Node.js** is installed, then run:  
-```sh
 npm install
-2️⃣ Start the Project
-For development mode:
-sh
+Create a .env file and add your API keys:
+
+GEONAMES_USERNAME=your_username
+WEATHERBIT_API_KEY=your_api_key
+PIXABAY_API_KEY=your_api_key
+
+🚀 Usage
+Start the Development Server
 
 npm run build-dev
-To run the server:
-sh
+This will launch the app in development mode.
+
+Build and Run in Production
+
+npm run build-prod
 npm start
-Then 
-
-arduino
-http://localhost:8081
-
-
 📂 Project Structure
 pgsql
+
+
 Root
 ├── package.json
 ├── README.md
+├── webpack.config.js
+├── .env
 ├── src
 │   ├── client
 │   │   ├── index.js
@@ -47,18 +48,24 @@ Root
 │   │   ├── styles
 │   │   │   └── style.scss
 │   │   └── views
-│   │       └── index.html 
+│   │       └── index.html
 │   └── server
 │       └── server.js
-└── webpack.config.js  
+└── .gitignore
+🛠️ Dependencies
+Ensure you have Node.js installed (v18 or higher).
+
+Install the required packages:
 
 
-⚙ Useful Commands
-Command	Description
-npm install	Install all dependencies
-npm run build-dev	Run development mode
-npm start	Start the local server
-npm run build-prod	Build for production
-👨‍💻 Developer
-✍ [AhmadBaker] – Full Stack Developer
+npm install express cors dotenv node-fetch webpack webpack-cli webpack-dev-server babel-loader sass style-loader css-loader html-webpack-plugin mini-css-extract-plugin
+🌎 API References
+Geonames API
+Weatherbit API
+Pixabay API
+🛠️ Troubleshooting
+If the server does not start, check your .env file and ensure API keys are correctly set.
+If npm install fails, try deleting node_modules and running:
 
+rm -rf node_modules package-lock.json
+npm install
