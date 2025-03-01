@@ -6,6 +6,7 @@
     "start": "node src/server/server.js",
     "dev": "webpack serve --open",
     "build": "webpack --mode production"
+
   },
   "keywords": [],
   "author": "",

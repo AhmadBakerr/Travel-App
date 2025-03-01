@@ -4,10 +4,10 @@ const path = require('path');
 const app = express();
 const PORT = 8081;
 
-// جعل المجلد "dist" متاحًا كملفات ثابتة
+// جعل مجلد "dist" متاحًا كملفات ثابتة
 app.use(express.static(path.join(__dirname, '../../dist')));
 
-// عند زيارة الصفحة الرئيسية "/"، أرسل index.html
+// عند زيارة الصفحة الرئيسية "/"
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../../dist/index.html'));
 });
