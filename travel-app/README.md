@@ -17,7 +17,7 @@ A web application that allows users to plan trips by entering a destination and 
 
 1️⃣ **Clone the repository:**  
 
-git clone https://github.com/yourusername/travel-app.git
+git clone https://github.com/ا/travel-app.git
 cd travel-app
 2️⃣ Install dependencies:
 
@@ -36,7 +36,8 @@ npm run build
 5️⃣ Start the server:
 
 ]
-npm start
+node src/server/server.js
+
 📝 Project Structure
 bash
 
