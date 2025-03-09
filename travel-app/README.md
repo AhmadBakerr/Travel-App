@@ -35,10 +35,9 @@ Your app should now be available at http://localhost:8081/.
 npm run build
 5️⃣ Start the server:
 
-node travel-app/src/server/server.js
+npm start
 
 📝 Project Structure
-bash
 
 travel-app/
 │── dist/                   # Production build  

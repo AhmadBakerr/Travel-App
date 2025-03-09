@@ -2,10 +2,11 @@
   "name": "travel-app",
   "version": "1.0.0",
   "main": "webpack.config.js",
-    "scripts": {
-    "start": "PORT=8081 node src/server/server.js",
-    "build": "webpack --mode production",
-    "dev": "webpack serve --open"
+      "scripts": {
+  "start": "node src/server/server.js",
+  "dev": "webpack serve --mode development --open",
+  "build": "webpack --mode production"
+
   },
   "keywords": [],
   "author": "",
