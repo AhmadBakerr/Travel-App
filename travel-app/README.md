@@ -27,15 +27,9 @@ npm install
 
 
 npm run dev
-Your app should now be available at http://localhost:8081/.
-
-4️⃣ Build for production:
+Your app should now be available at http://localhost:3000/.
 
 
-npm run build
-5️⃣ Start the server:
-
-npm start
 
 📝 Project Structure
 
